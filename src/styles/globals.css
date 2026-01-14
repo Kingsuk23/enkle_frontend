@@ -1,1 +1,40 @@
 @import "tailwindcss";
+
+:root {
+  /* natural color */
+  --Naturals-100: #f2f2f2;
+  --Naturals-300: #d6d6d6;
+  --Naturals-750: #4f4f4f;
+  --Naturals-900: #242424;
+
+  /* orange color  */
+  --Orange-450: #ff643d;
+  --Orange-500: #ff4a1c;
+  --Orange-300: #ff9980;
+  --Orange-200: #ffc2b2;
+  --Orange-100: #ffebe5;
+}
+
+@theme inline {
+  /* background color */
+  --color-token-bg-primary-default: var(--Naturals-100);
+  --color-token-bg-primary-hover: var(--Naturals-300);
+  --color-token-bg-primary-inverted: var(--Naturals-900);
+
+  /* text colors */
+  --color-token-text-primary-default: var(--Naturals-900);
+  --color-token-text-primary-inverted: var(--Naturals-100);
+  --color-token-text-primary-hover: var(--Naturals-900);
+  --color-token-text-secondary-default: var(--Naturals-750);
+
+  /* button */
+  --color-token-button-primary-default: var(--Orange-450);
+  --color-token-button-primary-hover: var(--Orange-500);
+  --color-token-button-primary-subtle: var(--Orange-100);
+
+  /* border */
+  --color-token-border-secondary-default: var(--Orange-300);
+
+  /* icon  */
+  --color-token-icon-primary-default: var(--Naturals-900);
+}

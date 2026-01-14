@@ -22,8 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${poppins.className} antialiased`}>
-      <body>
-        <div className="md:max-w-7xl flex flex-col justify-between mx-auto relative"></div>
+      <body className="md:max-w-7xl flex flex-col justify-between mx-auto relative text-token-text-primary-default bg-token-bg-primary-default md:px-4 px-2">
         {children}
       </body>
     </html>
